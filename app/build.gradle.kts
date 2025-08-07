@@ -50,12 +50,15 @@ afterEvaluate {
     publishing {
         publications {
             create<MavenPublication>("release") {
-                from(components["release"])
+                afterEvaluate {
+                    from(components["release"])
+                }
                 groupId = "com.github.WahajMubeen341"
                 artifactId = "numberlistlibrary"
-                version = "v1.0"
+                version = "1.0"
             }
         }
     }
 }
+
 
