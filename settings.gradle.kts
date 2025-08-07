@@ -21,7 +21,7 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "NumberListLibrary"
-include(":app")
+//include(":app")
 include(":numberlistlibrary")
 
  
